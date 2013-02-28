@@ -1,0 +1,16 @@
+====================
+German Bank Holidays
+====================
+
+German Bank Holidays provides helpers for getting the german national bank
+holidays for a specified year and state.
+Typical usage often looks like this:
+
+    #!/usr/bin/env python
+
+    from german_bank_holidays import Holidays, STATE_CODES
+    holidays = Holidays(2013, STATE_CODES['BAYERN'])
+    list_of_holidays = holidays.get_holiday_list()
+
+
+Originally written by Stephan John
